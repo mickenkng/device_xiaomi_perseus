@@ -87,10 +87,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SecureElement
 
-# Slider settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/pn5xx
