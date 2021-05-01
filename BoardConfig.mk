@@ -8,7 +8,6 @@
 -include device/xiaomi/sdm845-common/BoardConfigCommon.mk
 
 BUILD_BROKEN_DUP_RULES := true
-SELINUX_IGNORE_NEVERALLOWS=true
 
 DEVICE_PATH := device/xiaomi/perseus
 
