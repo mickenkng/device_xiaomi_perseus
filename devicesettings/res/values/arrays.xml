@@ -17,6 +17,7 @@
 <resources>
     <!-- Values for Slider sound prefs -->
     <string-array name="slider_sound_entries" translatable="false">
+        <item>@string/slider_sound_door</item>
         <item>@string/slider_sound_jianghu</item>
         <item>@string/slider_sound_jiguan</item>
         <item>@string/slider_sound_keji</item>
@@ -26,6 +27,7 @@
     </string-array>
 
     <string-array name="slider_sound_values" translatable="false">
+        <item>door</item>
         <item>jianghu</item>
         <item>jiguan</item>
         <item>keji</item>
