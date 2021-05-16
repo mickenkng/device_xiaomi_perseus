@@ -15,7 +15,34 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          android:sharedUserId="android.uid.system"
-          package="org.lineageos.settings.device">
-    <uses-permission android:name="android.permission.VIBRATE" />
+    package="org.lineageos.settings"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="24"/>
+
+    <application
+        android:label="@string/device_settings_app_name"
+        android:persistent="true">
+
+        <activity
+            android:name=".device.SliderSettingsActivity"
+            android:label="@string/slider_settings_title"
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.gestures" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/slider_settings_summary" />
+        </activity>
+
+    </application>
 </manifest>

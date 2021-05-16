@@ -18,7 +18,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-kang
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -84,3 +85,5 @@ PRODUCT_COPY_FILES += \
 # Slider settings
 PRODUCT_PACKAGES += \
     DeviceSettings
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/devicesettings/snd,$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui)
